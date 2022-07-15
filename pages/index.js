@@ -23,7 +23,7 @@ export default function Home() {
   }, []);
 
   const searchByNameOrEmail = (data) => {
-    return users.filter((user) => {
+    return data.filter((user) => {
       const { name, email } = user;
       if (
         name.toLowerCase().includes(searchtext) ||
